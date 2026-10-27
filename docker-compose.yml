@@ -1,0 +1,10 @@
+# Redis local para o TaskFlow (opcional — use se não tiver Redis/Memurai instalado).
+#   docker compose up -d redis
+#   docker compose exec redis redis-cli MONITOR
+services:
+  redis:
+    image: redis:7-alpine
+    container_name: taskflow-redis
+    ports:
+      - '6379:6379'
+    restart: unless-stopped

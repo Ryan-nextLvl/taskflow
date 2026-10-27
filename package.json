@@ -1,0 +1,30 @@
+{
+  "name": "taskflow",
+  "version": "1.0.0",
+  "private": true,
+  "description": "TaskFlow — gerenciamento de tarefas com Supabase (PostgreSQL) e cache Redis",
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "concurrently -n api,web -c magenta,cyan \"npm run dev -w backend\" \"npm run dev -w frontend\"",
+    "dev:backend": "npm run dev -w backend",
+    "dev:frontend": "npm run dev -w frontend",
+    "build": "npm run build -w backend && npm run build -w frontend",
+    "test": "npm run test -w backend && npm run test -w frontend",
+    "lint": "npm run lint -w backend && npm run lint -w frontend",
+    "typecheck": "npm run typecheck -w backend && npm run typecheck -w frontend",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "db:seed": "npm run seed -w backend",
+    "db:types": "supabase gen types typescript --local --schema public > backend/src/types/database.types.ts && prettier --write backend/src/types/database.types.ts"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.6",
+    "prettier": "^3.9.10"
+  }
+}
