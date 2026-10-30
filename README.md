@@ -15,11 +15,15 @@ PostgreSQL no Supabase como fonte da verdade · Redis como cache dos indicadores
 [![Redis](https://img.shields.io/badge/Redis-cache-FF4438?logo=redis&logoColor=white)](https://redis.io)
 [![License: MIT](https://img.shields.io/badge/licen%C3%A7a-MIT-blue)](LICENSE)
 
+**[▶ Assistir à demonstração em vídeo (4 min)](https://youtu.be/C7gFxKEabxU)**
+
 </div>
 
-![Dashboard do TaskFlow](docs/screenshots/02-dashboard.png)
+[![Dashboard do TaskFlow. Clique para assistir à demonstração no YouTube.](docs/screenshots/02-dashboard.png)](https://youtu.be/C7gFxKEabxU)
 
 ## Visão geral
+
+> Prefere ver funcionando? A [demonstração em vídeo](https://youtu.be/C7gFxKEabxU) percorre o dashboard, as tarefas, o Kanban, os projetos e o painel de diagnóstico do cache (MISS × HIT).
 
 O TaskFlow organiza tarefas por projeto, prioridade, prazo e status. Ele mostra o que está atrasado, o que vence hoje e como a produtividade evolui ao longo dos dias.
 

@@ -23,6 +23,11 @@ supabase/.env
 *.log
 npm-debug.log*
 
+# Vídeos de demonstração (publicados no YouTube; arquivos pesados não entram no Git)
+video/*.mp4
+video/*.webm
+video/*.wav
+
 # Editor / SO
 .DS_Store
 Thumbs.db
